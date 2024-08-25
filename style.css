@@ -301,7 +301,7 @@ html {
    
     background-color: orange;
     overflow: hidden;
-    /* align-items: center; */
+   
 
   }
   .phone{
@@ -309,6 +309,7 @@ html {
     width: 100%;
     display: flex;
     align-items: end;
+    overflow: hidden;
 
    
   }
@@ -365,10 +366,12 @@ html {
   }
   
   
+  
   @media screen and (max-width: 768px) {
     .container1, .container2, .container3 {
       height: auto;
     }
+    
   
     .navbar {
       position: fixed;
@@ -456,6 +459,11 @@ html {
     .main img {
       height: 70px;
     }
+    .app{
+      display: flex;
+      flex-direction: column;
+      overflow: visible;
+    }
   
     .footer {
       grid-template-columns: 1fr;
@@ -464,6 +472,10 @@ html {
   
     .footer div {
       margin-bottom: 20px;
+    }
+    .app{
+      display:  flex;
+      flex-direction: column;
     }
   }
   
